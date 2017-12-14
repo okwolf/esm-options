@@ -4,11 +4,10 @@
   "private": true,
   "main": "index.js",
   "devDependencies": {
-    "@std/esm": "^0.18.0",
-    "cross-env": "^5.1.1"
+    "@std/esm": "^0.18.0"
   },
   "scripts": {
-    "format": "npx prettier --write src/**/*.js",
-    "start": "cross-env ESM_OPTIONS=cjs node -r @std/esm src"
+    "format": "npx prettier --write src/**/*.mjs",
+    "start": "node -r @std/esm src"
   }
 }
