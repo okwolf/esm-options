@@ -1,0 +1,14 @@
+{
+  "name": "esm-options",
+  "version": "0.0.1",
+  "private": true,
+  "main": "index.js",
+  "devDependencies": {
+    "@std/esm": "^0.18.0",
+    "cross-env": "^5.1.1"
+  },
+  "scripts": {
+    "format": "npx prettier --write src/**/*.js",
+    "start": "cross-env ESM_OPTIONS=cjs node -r @std/esm src"
+  }
+}
