@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "private": true,
   "main": "index.js",
+  "@std/esm": "cjs",
   "devDependencies": {
-    "@std/esm": "^0.18.0",
-    "cross-env": "^5.1.1"
+    "@std/esm": "^0.18.0"
   },
   "scripts": {
     "format": "npx prettier --write src/**/*.js",
-    "start": "cross-env ESM_OPTIONS=cjs node -r @std/esm src"
+    "start": "node -r @std/esm src"
   }
 }
